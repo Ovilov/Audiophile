@@ -1,0 +1,39 @@
+.footer {
+  background-color: $dark-color;
+}
+.line {
+  width: 10.1rem;
+  height: 0.4rem;
+  background-color: $dark-orange-color;
+  margin-bottom: 7.1rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.6rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+.info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+  width: 53rem;
+  color: $wihte-color;
+  opacity: 0.5;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+.footer__socials-list {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.footer__socials-link:hover svg path {
+  transition: $transition-time;
+  fill: $dark-orange-color;
+}

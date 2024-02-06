@@ -1,0 +1,673 @@
+*,
+*::after,
+*::before {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+#active {
+  color: #d87d4a;
+}
+
+main {
+  flex-grow: 1;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.shoping__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 35rem;
+  height: 20.4rem;
+  background-color: #f1f1f1;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 16.8rem;
+  margin-top: 20rem;
+}
+.card img {
+  display: inline-block;
+  margin-top: -6rem;
+}
+
+.card__title {
+  margin-bottom: 1.5rem;
+}
+
+.card__link:hover span {
+  opacity: 1;
+  color: #d87d4a;
+}
+.card__link span {
+  margin-right: 1.3rem;
+  font-size: 1.5rem;
+  color: #000000;
+  opacity: 0.5;
+  font-weight: 700;
+  transition: ease 0.3s;
+}
+
+.autor {
+  margin-bottom: 20rem;
+}
+
+.autor__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.autor__content {
+  width: 44.5rem;
+  height: 29.5rem;
+}
+
+.autor__title {
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.autor__title span {
+  color: #d87d4a;
+}
+
+.autor__description {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.autor__img {
+  border-radius: 8px;
+  width: 54rem;
+  height: 58.8rem;
+  background-image: url("../images/shared/desktop/image-best-gear.jpg");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manrope-v15-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/manrope-v15-latin-700.woff2") format("woff2");
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  letter-spacing: "normal";
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 1.03;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 1.12;
+  letter-spacing: 1.15px;
+}
+
+h4 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+
+h5 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  letter-spacing: 1.7px;
+}
+
+h6 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  letter-spacing: 1.3px;
+}
+
+.btn-orange {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3.15rem;
+  padding-right: 2.95rem;
+  color: #ffffff;
+  background-color: #d87d4a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+.btn-orange:hover {
+  background-color: #fbaf85;
+  color: #ffffff;
+}
+
+.btn-black {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3.15rem;
+  padding-right: 2.95rem;
+  color: #000000;
+  background-color: transparent;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  text-decoration: none;
+  transition: ease 0.3s;
+}
+.btn-black:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.herader {
+  background-color: #141414;
+  padding-top: 3.2rem;
+  padding-bottom: 3.6rem;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo:hover {
+  opacity: 0.8;
+}
+.site-logo:active {
+  opacity: 0.4;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+}
+
+.sitenav__link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: ease 0.3s;
+}
+.sitenav__link:hover {
+  color: #d87d4a;
+}
+
+.header__basket-btn {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #000000;
+}
+
+.line {
+  width: 10.1rem;
+  height: 0.4rem;
+  background-color: #d87d4a;
+  margin-bottom: 7.1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.6rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+  width: 53rem;
+  color: #ffffff;
+  opacity: 0.5;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.footer__socials-list {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.footer__socials-link:hover svg path {
+  transition: ease 0.3s;
+  fill: #d87d4a;
+}
+
+.hero {
+  background-color: #141414;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr {
+  height: 1px;
+  background-color: #f1f1f1;
+  width: 100%;
+  max-width: 111rem;
+  opacity: 20%;
+}
+
+.hero__content {
+  width: 39.8rem;
+}
+
+.hero__label {
+  margin-bottom: 2.4rem;
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 1rem;
+}
+
+.hero__title {
+  margin-bottom: 2.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero__description {
+  color: #ffffff;
+  opacity: 0.75;
+  margin-bottom: 4rem;
+  width: 34.9rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.btn-orange {
+  border: 0;
+}
+
+.hero__img {
+  width: 68.5rem;
+  height: 63rem;
+  background-image: url("../images/home/desktop/img-hero.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.orange-section {
+  margin-bottom: 4.8rem;
+}
+
+.orange-section__container {
+  width: 111rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13.8rem;
+  background-color: #d87d4a;
+  border-radius: 8px;
+}
+.orange-section__container img {
+  margin-top: 9.6rem;
+  margin-bottom: -0.3rem;
+}
+
+.orange-section__content {
+  width: 34.9rem;
+  height: 30.3rem;
+  color: #ffffff;
+}
+
+.orenge-section__title {
+  margin-bottom: 2.4rem;
+}
+
+.orange-section__description {
+  opacity: 0.75;
+  line-height: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.orange-black-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+.orange-black-btn:hover {
+  background-color: #4c4c4c;
+  border: 1px solid #4c4c4c;
+}
+
+.ZX7-speaker {
+  margin-bottom: 4.8rem;
+}
+
+.ZX7-speaker__container {
+  height: 32rem;
+  border-radius: 8px;
+  padding: 9.65rem 10.1rem;
+  width: 111rem;
+  background-image: url("../images/home/desktop/image-speaker-zx7.jpg");
+}
+
+.btn-black {
+  display: inline-block;
+  margin-top: 4rem;
+}
+
+.YX1-earphones {
+  margin-bottom: 20rem;
+}
+
+.YX1-earphones__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.YX1-earphones__img {
+  background-image: url("../images/home/desktop/image-earphones-yx1.jpg");
+}
+
+.YX1-earphones__card {
+  width: 54rem;
+  height: 32rem;
+  border-radius: 8px;
+}
+
+.YX1-earphones__content {
+  padding: 9.65rem 10.1rem;
+  background-color: #f1f1f1;
+}
+
+.page__hero {
+  background-color: #141414;
+  margin-bottom: 16rem;
+}
+
+.page__container {
+  display: flex;
+  justify-content: center;
+  padding-top: 9.7rem;
+  padding-bottom: 9.8rem;
+}
+
+.page__title {
+  color: #ffffff;
+}
+
+.product__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16rem;
+}
+
+.product__img {
+  border-radius: 8px;
+  width: 54rem;
+  height: 56rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one {
+  background-image: url("../images/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg");
+}
+
+.two {
+  background-image: url("../images/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg");
+}
+
+.three {
+  background-image: url("../images/product-xx59-headphones/desktop/image-category-page-preview.jpg");
+}
+
+.four {
+  background-image: url("../images/product-zx9-speaker/desktop/image-category-page-preview.jpg");
+}
+
+.five {
+  background-image: url("../images/product-zx7-speaker/desktop/image-category-page-preview.jpg");
+}
+
+.lest {
+  background-image: url("../images/product-yx1-earphones/desktop/image-category-page-preview.jpg");
+}
+
+.content {
+  width: 44.5rem;
+}
+
+.product__label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  color: #d87d4a;
+  margin-bottom: 1.6rem;
+}
+
+.product__title {
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.product__description {
+  color: #000000;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  opacity: 0.5;
+  margin-bottom: 6rem;
+}
+
+.back {
+  margin-top: 7.9rem;
+  margin-bottom: 5.6rem;
+}
+
+.back__link {
+  opacity: 0.5;
+  color: #000000;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.price {
+  margin-top: 3.2rem;
+  margin-bottom: 4.7rem;
+}
+
+.selection {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.counter {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #f1f1f1;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 12rem;
+  height: 4.8rem;
+}
+.counter button {
+  border: 0;
+  cursor: pointer;
+  opacity: 0.25;
+}
+
+.feature__container {
+  display: flex;
+  gap: 12.5rem;
+}
+
+.feature__left {
+  width: 62.5rem;
+  height: 31.8rem;
+}
+
+.feture__title {
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+
+.feature__description {
+  line-height: 2.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.feature__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.feature__item {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.feature__item p {
+  opacity: 0.5;
+}
+.feature__item span {
+  color: #d87d4a;
+  font-weight: 700;
+}
+
+.images {
+  margin-top: 16rem;
+}
+
+.images__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.images__left {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.images__small {
+  width: 44.5rem;
+  height: 28rem;
+  border-radius: 8px;
+}
+
+.images__right {
+  border-radius: 8px;
+}
+
+.explanation__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6.4rem;
+  margin-top: 16rem;
+}
+
+.explanation__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.explanation__item img {
+  width: 35rem;
+  height: 31.8rem;
+  border-radius: 8px;
+}
+.explanation__item h5 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}/*# sourceMappingURL=main.css.map */

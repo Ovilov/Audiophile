@@ -1,0 +1,45 @@
+.herader {
+  background-color: #141414;
+  padding-top: 3.2rem;
+  padding-bottom: 3.6rem;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.4;
+  }
+}
+.site-logo__img {
+}
+.sitenav {
+}
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  gap: 3.4rem;
+}
+.sitenav__item {
+}
+.sitenav__link {
+  color: $wihte-color;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: $transition-time;
+  &:hover {
+    color: $dark-orange-color;
+  }
+}
+.header__basket-btn {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
